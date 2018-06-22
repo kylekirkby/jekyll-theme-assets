@@ -3,10 +3,10 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 # coding: utf-8
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-theme-assets"
-  spec.version       = "0.1.2"
-  spec.authors       = ["Pavel Tsurbeleu"]
-  spec.email         = ["pavel.tsurbeleu@me.com"]
+  spec.name          = "jekyll-theme-assets-updated"
+  spec.version       = "1.1"
+  spec.authors       = ["Pavel Tsurbeleu", "Kyle Kirkby"]
+  spec.email         = ["pavel.tsurbeleu@me.com", "kyle.kirkby@linaro.org"]
 
   spec.summary       = %q{Assets for a gem-based Jekyll theme}
   spec.description   = %q{A Jekyll plugin, that allows you to use private and public assets defined in a gem-based Jekyll theme.}
@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.files         = %W(Rakefile Gemfile README.md LICENSE) + Dir["lib/**/*"]
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "jekyll-assets", "~> 2.2.8"
+  spec.add_runtime_dependency "jekyll-assets", "~> 2.4.0"
   spec.add_runtime_dependency "jekyll", ">= 3.0", "~> 3.1"
 
   spec.add_development_dependency "bundler", "~> 1.14"
